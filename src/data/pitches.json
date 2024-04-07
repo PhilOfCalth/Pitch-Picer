@@ -1,0 +1,72 @@
+{
+    "Wythenshaw.png": [
+        {
+            "topLeftX": 799,
+            "topLeftY": 858,
+            "width": 116,
+            "height": 171
+        },
+        {
+            "topLeftX": 799,
+            "topLeftY": 1000,
+            "width": 116,
+            "height": 175
+        },
+        {
+            "topLeftX": 633,
+            "topLeftY": 982,
+            "width": 164,
+            "height": 119
+        },
+        {
+            "topLeftX": 502,
+            "topLeftY": 979,
+            "width": 164,
+            "height": 119
+        },
+        {
+            "topLeftX": 70,
+            "topLeftY": 1100,
+            "width": 113,
+            "height": 165
+        },
+        {
+            "topLeftX": 48,
+            "topLeftY": 978,
+            "width": 115,
+            "height": 164
+        }
+    ],
+    "ChorltonPark.png": [
+        {
+            "topLeftX": 400,
+            "topLeftY": 584,
+            "width": 125,
+            "height": 175
+        },
+        {
+            "topLeftX": 583,
+            "topLeftY": 384,
+            "width": 106,
+            "height": 153
+        },
+        {
+            "topLeftX": 362,
+            "topLeftY": 416,
+            "width": 110,
+            "height": 152
+        },
+        {
+            "topLeftX": 707,
+            "topLeftY": 582,
+            "width": 80,
+            "height": 112
+        },
+        {
+            "topLeftX": 590,
+            "topLeftY": 638,
+            "width": 71,
+            "height": 103
+        }
+    ]
+}
