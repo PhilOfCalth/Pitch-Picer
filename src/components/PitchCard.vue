@@ -8,7 +8,6 @@
     const printGrounds = async (event) => {
         const toPrintDiv = event.target.parentNode;
         event.target.className = 'selected'
-        console.log(event.target.className)
         
         const printCanvas = await html2canvas(toPrintDiv, { type: "dataURL" });
         const date = (new Date()).toLocaleDateString('en-GB');
@@ -30,7 +29,7 @@
 
 <template>
         <h2>{{ groundsName }}</h2>
-        <div class="ground" :ref="groundsName">
+        <div class="ground">
             <img :alt="groundsName" :src="require('../assets/' + props.image)" />
             <div class="pitch"
                 v-for="(pitch, index) in pitchList" 
@@ -45,6 +44,7 @@
 <style scoped>
     .ground {
         position: relative;
+        display: inline-block;
     }
 
     .pitch {

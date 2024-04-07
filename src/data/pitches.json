@@ -40,31 +40,31 @@
     "ChorltonPark.png": [
         {
             "topLeftX": 400,
-            "topLeftY": 584,
+            "topLeftY": 413,
             "width": 125,
             "height": 175
         },
         {
             "topLeftX": 583,
-            "topLeftY": 384,
+            "topLeftY": 213,
             "width": 106,
             "height": 153
         },
         {
-            "topLeftX": 362,
-            "topLeftY": 416,
+            "topLeftX": 360,
+            "topLeftY": 245,
             "width": 110,
             "height": 152
         },
         {
             "topLeftX": 707,
-            "topLeftY": 582,
+            "topLeftY": 411,
             "width": 80,
             "height": 112
         },
         {
             "topLeftX": 590,
-            "topLeftY": 638,
+            "topLeftY": 467,
             "width": 71,
             "height": 103
         }

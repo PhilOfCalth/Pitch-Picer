@@ -1,12 +1,40 @@
 <script setup>
-    import pitchData from "../data/pitches.json"
+    import pitchDataRaw from "../data/pitches.json"
     import PitchCard from "../components/PitchCard"
+    import { ref, watch } from "vue"
+    import VueCookies from "vue-cookies"
 
+    const pitchData = ref(pitchDataRaw)
+    const oldSearch = VueCookies.get('oldSearch');
+    const search = ref ( oldSearch ? oldSearch : "");
+
+    const doSearch = () => {
+        VueCookies.set('oldSearch', search.value, "3y");
+
+        pitchData.value = Object.keys(pitchDataRaw)
+            .filter( pitchImage => {
+                const bool = pitchImage
+                    .replace(/^(\w+\/)*/, "")
+                    .replace(/.\w+$/, "")
+                    .toLowerCase()
+                    .includes(search.value.toLowerCase());
+                return bool;
+            })
+            .reduce((obj, key) => {
+                obj[key] = pitchDataRaw[key]
+                return obj;
+            }, {})
+    };
+    doSearch();
+
+
+    watch(search, doSearch);
 </script>
 
 
 <template>
     <div class="search">
+        <input id="GroundsSearch" v-model.trim="search" type="text" placeholder="Search..." />
     </div>
     <div class="grounds">
       <PitchCard 
