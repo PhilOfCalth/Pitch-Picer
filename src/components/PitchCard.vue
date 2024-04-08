@@ -50,6 +50,7 @@
         border-width: 12px;
         border-color: rgb(200, 200, 200);
         border-radius: 50px;
+        display: inline-block;
     }
 
     .ground {
