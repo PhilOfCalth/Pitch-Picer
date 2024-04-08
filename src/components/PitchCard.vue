@@ -28,6 +28,7 @@
 </script>
 
 <template>
+    <div class="ground-card" >
         <h2>{{ groundsName }}</h2>
         <div class="ground">
             <img :alt="groundsName" :src="require('../assets/' + props.image)" />
@@ -35,20 +36,34 @@
                 v-for="(pitch, index) in pitchList" 
                 :key="props.image+index"
                 :id="props.image+index"
-                :style="'top: '+pitch.topLeftX+'px; left: '+pitch.topLeftY+'px; width: '+pitch.width+'px; height: '+pitch.height+'px;'"
+                :style="'top: '+pitch.topLeftX+'px; left: '+pitch.topLeftY+'px; width: '+pitch.width+'px; height: '+pitch.height+'px; transform: rotate('+pitch.rotate+'deg);'"
                 @click="printGrounds"
                 ></div>
         </div>
+    </div>
 </template>
 
 <style scoped>
+    .ground-card{
+        margin-top: 3rem;
+        border-style: dashed;
+        border-width: 12px;
+        border-color: rgb(200, 200, 200);
+        border-radius: 50px;
+    }
+
     .ground {
         position: relative;
         display: inline-block;
     }
 
+    h2 {
+        font-size: 2rem;
+    }
+
     .pitch {
         position: absolute;
+        transform: rotate(20deg);
         z-index: 10;
         border-color: yellow;
         border-width: 3px;

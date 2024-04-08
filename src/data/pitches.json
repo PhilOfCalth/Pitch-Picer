@@ -4,37 +4,43 @@
             "topLeftX": 799,
             "topLeftY": 858,
             "width": 116,
-            "height": 171
+            "height": 171,
+            "rotate": 0
         },
         {
             "topLeftX": 799,
             "topLeftY": 1000,
             "width": 116,
-            "height": 175
+            "height": 175,
+            "rotate": 0
         },
         {
             "topLeftX": 633,
             "topLeftY": 982,
             "width": 164,
-            "height": 119
+            "height": 119,
+            "rotate": 0
         },
         {
             "topLeftX": 502,
             "topLeftY": 979,
             "width": 164,
-            "height": 119
+            "height": 119,
+            "rotate": 0
         },
         {
-            "topLeftX": 70,
-            "topLeftY": 1100,
-            "width": 113,
-            "height": 165
+            "topLeftX": 85,
+            "topLeftY": 1099,
+            "width": 102,
+            "height": 139,
+            "rotate": 12
         },
         {
-            "topLeftX": 48,
-            "topLeftY": 978,
-            "width": 115,
-            "height": 164
+            "topLeftX": 58,
+            "topLeftY": 986,
+            "width": 107,
+            "height": 144,
+            "rotate": 12
         }
     ],
     "ChorltonPark.png": [
@@ -42,31 +48,36 @@
             "topLeftX": 400,
             "topLeftY": 413,
             "width": 125,
-            "height": 175
+            "height": 175,
+            "rotate": 0
         },
         {
             "topLeftX": 583,
             "topLeftY": 213,
             "width": 106,
-            "height": 153
+            "height": 153,
+            "rotate": 0
         },
         {
             "topLeftX": 360,
             "topLeftY": 245,
             "width": 110,
-            "height": 152
+            "height": 152,
+            "rotate": 0
         },
         {
             "topLeftX": 707,
             "topLeftY": 411,
             "width": 80,
-            "height": 112
+            "height": 112,
+            "rotate": 0
         },
         {
             "topLeftX": 590,
             "topLeftY": 467,
             "width": 71,
-            "height": 103
+            "height": 103,
+            "rotate": 0
         }
     ]
 }

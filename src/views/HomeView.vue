@@ -44,3 +44,15 @@
         :pitchList="pitchData[key]" />
     </div>
 </template>
+
+<style scoped>
+
+input {
+    min-width: 30rem;
+    min-height: 3rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+</style>

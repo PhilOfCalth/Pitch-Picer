@@ -18,7 +18,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: rgb(200, 200, 200);
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: Garamond, serif;
+  font-size: 5rem;
+  text-decoration: overline underline double;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+input, textarea{
+  background-color: rgb(200, 200, 200);
 }
 </style>
