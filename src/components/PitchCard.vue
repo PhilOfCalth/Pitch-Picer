@@ -36,7 +36,7 @@
                 v-for="(pitch, index) in pitchList" 
                 :key="props.image+index"
                 :id="props.image+index"
-                :style="'top: '+pitch.topLeftX+'px; left: '+pitch.topLeftY+'px; width: '+pitch.width+'px; height: '+pitch.height+'px; transform: rotate('+pitch.rotate+'deg);'"
+                :style="'left: '+pitch.topLeftX+'px; top: '+pitch.topLeftY+'px; width: '+pitch.width+'px; height: '+pitch.height+'px; transform: rotate('+pitch.rotate+'deg);'"
                 @click="printGrounds"
                 ></div>
         </div>
