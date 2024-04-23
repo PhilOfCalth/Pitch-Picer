@@ -3,7 +3,15 @@
     import html2canvas from "html2canvas"
 
     const props = defineProps(['image', 'pitchList']);
-    const groundsName = props.image.replace(/^(\w+\/)*/, "").replace(/.\w+$/, "");
+    let groundsName = props.image
+                            .replace(/^(\w+\/)*/, "")
+                            .replace(/.\w+$/, "");
+
+    const midCapitalRegex = /([a-z])([A-Z])/g;
+
+    if(groundsName.match(midCapitalRegex)){
+      groundsName = groundsName.replaceAll(midCapitalRegex, "$1 $2");
+    }
 
     const printGrounds = async (event) => {
         const toPrintDiv = event.target.parentNode;
